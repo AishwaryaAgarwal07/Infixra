@@ -7,10 +7,7 @@ function App() {
 
   return (
     <BrowserRouter>
-
-
       <Navbar/>
-
     </BrowserRouter>
 
   )

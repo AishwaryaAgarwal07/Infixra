@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { menu, close } from '../assets'
+import { menu, close, user } from '../assets'
 
 const Navbar = () => {
     const [active, setActive] = useState("");
@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <nav
             className={`${styles.paddingX
-                } w-full flex items-center fixed py-5 top-0 z-20 bg-primary`}
+                } w-full flex items-center fixed py-5 top-0 z-20 bg-white`}
         >
             <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
                 <Link
@@ -24,21 +24,22 @@ const Navbar = () => {
                     }}
                 >
                     {/* <img src={logo} alt='logo' className='w-9 h-9 object-contain' /> */}
-                    <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+                    <p className='text-stone-950 text-[18px] font-bold cursor-pointer flex '>
                         Infixra
                     </p>
                 </Link>
-                <ul className='list-none hidden sm:flex flex-row gap-10'>
+                <ul className='list-none hidden sm:flex flex-row gap-10 '>
                     {navLinks.map((nav) => (
                         <li
                             key={nav.id}
                             className={`${active === nav.title ? "text-white" : "text-secondary"
-                                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                                }  hover:text-white text-[18px] font-medium cursor-pointer`}
                             onClick={() => setActive(nav.title)}
                         >
-                            <a href={`#${nav.id}`}>{nav.title}</a>
+                            <a className="text-stone-950" href={`#${nav.id}`}>{nav.title}</a>
                         </li>
                     ))}
+                    <img src={user} alt='user' className='w-8 h-8 ' />
                 </ul>
 
                 {/* small screen */}

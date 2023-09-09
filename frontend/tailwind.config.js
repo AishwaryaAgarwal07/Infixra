@@ -11,7 +11,10 @@ export default {
         footarColor:"061124",
         navColor:"0b1015",
         hover:"#1c6aab"
-      }
+      },
+      screens: {
+        xs: "450px",
+      },
     },
   },
   plugins: [],

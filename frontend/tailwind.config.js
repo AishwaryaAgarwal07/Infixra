@@ -2,7 +2,16 @@
 export default {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        //main colors
+        primary: "f8f8f8",
+        secondary: "2d3061",
+        tertiary: "08088f",
+        footarColor:"061124",
+        navColor:"0b1015",
+      }
+    },
   },
   plugins: [],
   

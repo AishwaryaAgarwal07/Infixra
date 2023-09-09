@@ -12,9 +12,10 @@ const Navbar = () => {
     return (
         <nav
             className={`${styles.paddingX
-                } w-full flex items-center fixed py-5 top-0 z-20 bg-navColor`}
+                } w-full flex items-center fixed h-20 top-0 z-20 bg-navColor `}
+                // style={{border: '1px solid white'}}
         >
-            <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+            <div className=' w-full flex justify-between items-center max-w-8xl mx-auto'>
                 <Link
                     to='/'
                     className='flex items-center gap-2'
@@ -28,15 +29,18 @@ const Navbar = () => {
                         Infixra
                     </p>
                 </Link>
-                <ul className='list-none hidden sm:flex flex-row gap-10 '>
+                <ul className='list-none hidden sm:flex flex-row  items-center gap-10 h-20'
+                // style={{border: '1px solid'}} 
+                >
                     {navLinks.map((nav) => (
                         <li
                             key={nav.id}
-                            className={`${active === nav.title ? "text-white" : "text-black"
-                                }  hover:bg-hover text-[18px] font-medium cursor-pointer`}
+                            className={`${active === nav.title ? "bg-hover " : "text-black"
+                                }  hover:bg-hover text-[18px] font-medium  flex items-center h-full  cursor-pointer `}
+                                // style={{border: '1px solid', display: 'flex',alignItems: 'center', height: '4.9rem'}} 
                             onClick={() => setActive(nav.title)}
                         >
-                            <a className="text-white  hover:text-white" href={`#${nav.id}`}>{nav.title}</a>
+                            <a className="text-white  hover:text-white " href={`#${nav.id}`}>{nav.title}</a>
                         </li>
                     ))}
                     <img src={user} alt='user' className='w-8 h-8 ' />
@@ -52,20 +56,22 @@ const Navbar = () => {
                     />
                     <div
                         className={`${!toggle ? "hidden" : "flex"
-                            } p-6 purple-gradient absolute top-20 right-0 mx-1 my-1 min-w-[140px] z-10 rounded-xl`}
+                            } p-6 purple-gradient absolute top-20 right-0 mx-1  my-1 min-w-[140px] z-10 rounded-xl`
+                            } 
+                            // style={{border: '1px solid'}} 
                     >
                         <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
                             {navLinks.map((nav) => (
                                 <li
                                     key={nav.id}
-                                    className={`font-poppins font-medium cursor-pointer text-[16px] ${active === nav.title ? "text-white" : "text-secondary"
+                                    className={`  hover:bg-hover font-poppins font-medium flex items-center w-full cursor-pointer text-[16px] ${active === nav.title ? "bg-hover" : "text-black"
                                         }`}
                                     onClick={() => {
                                         setToggle(!toggle);
                                         setActive(nav.title);
                                     }}
                                 >
-                                    <a className="text-white" href={`#${nav.id}`}>{nav.title}</a>
+                                    <a className="text-white  hover:text-white" href={`#${nav.id}`}>{nav.title}</a>
                                 </li>
                             ))}
                         </ul>

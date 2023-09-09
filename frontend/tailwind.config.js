@@ -10,6 +10,7 @@ export default {
         tertiary: "08088f",
         footarColor:"061124",
         navColor:"0b1015",
+        hover:"#1c6aab"
       }
     },
   },

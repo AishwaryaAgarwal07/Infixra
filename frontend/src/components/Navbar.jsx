@@ -12,8 +12,8 @@ const Navbar = () => {
     return (
         <nav
             className={`${styles.paddingX
-                } w-full flex items-center fixed h-20 top-0 z-20 bg-navColor `}
-                // style={{border: '1px solid white'}}
+                } w-full flex items-center fixed top-0 z-20 bg-navColor `}
+                style={{border: '1px solid white'}}
         >
             <div className=' w-full flex justify-between items-center max-w-8xl mx-auto'>
                 <Link
@@ -24,7 +24,7 @@ const Navbar = () => {
                         window.scrollTo(0, 0);
                     }}
                 >
-                    <img src={logo} alt='logo' className='w-40 h-40 object-contain' />
+                    <img src={logo} alt='logo' className='w-15 h-10 object-contain' />
                     {/* <p className='text-white text-[18px] font-bold cursor-pointer flex '>
                         Infixra
                     </p> */}

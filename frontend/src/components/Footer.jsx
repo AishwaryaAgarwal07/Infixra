@@ -1,10 +1,11 @@
 import React from 'react'
+import { styles } from '../styles';
 
 const Footer = () => {
     return (
-        <section className="bottom-0">
-            <div className="text-black">Footer</div>
-        </section>
+        <footer >
+            <div>footer</div>
+        </footer>
     )
 }
 

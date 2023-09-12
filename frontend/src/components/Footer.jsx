@@ -1,11 +1,10 @@
 import React from 'react'
 import { logo, insta, fb, tw, youtube, } from '../assets'
-import { styles } from '../styles';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="w-screen border h-96  bg-footerColor" >
+        <footer className="w-screen border h-96   bg-footerColor" >
             <div className=" flex  sm:flex-row h-full flex-col">
 
                 <div className="basis-1/2 flex justify-center  ">
@@ -76,6 +75,14 @@ const Footer = () => {
                         <p>Infixra@gmail.com </p>
                         <p>Near Ashish Royal Tower, Bareilly</p>
                     </address>
+                </div>
+
+            </div>
+            <div className="-mt-10 border-t-2 mx-auto flex justify-between w-5/6 ">
+                <h6 className="text-[.8rem] mx-9">© 2023 INFIXRA </h6>
+                <div className="flex flex-row gap-11 mx-9">
+                    <Link to="/privacy" className="text-white " >Privacy Policy</Link>
+                    <Link to="/terms" className="text-white" >Terms & Conditions </Link>
                 </div>
             </div>
         </footer >

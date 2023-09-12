@@ -10,8 +10,8 @@ function App() {
 
           <Navbar />
           <Hero />
-        <Services />
-        <Portfolio />
+        {/* <Services />
+        <Portfolio /> */}
         <Footer />
     
     </BrowserRouter>

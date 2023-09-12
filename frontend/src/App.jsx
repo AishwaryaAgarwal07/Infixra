@@ -8,12 +8,11 @@ function App() {
   return (
     <BrowserRouter>
 
-          <Navbar />
-          <Hero />
-        {/* <Services />
+      <Navbar />
+      <Hero />
+      {/* <Services />
         <Portfolio /> */}
-        <Footer />
-    
+      <Footer />
     </BrowserRouter>
 
   )

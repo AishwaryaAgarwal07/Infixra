@@ -7,6 +7,11 @@ import insta from "./insta.svg";
 import fb from "./fb.svg";
 import tw from "./tw.svg";
 import youtube from "./youtube.svg";
+import a from "./a.svg";
+import Dt from "./Dt.svg";
+import Qt from "./Qt.svg";
+import Nc from "./Nc.svg";
+import Cm from "./Cm.svg";
 
 export {
   menu,
@@ -18,4 +23,9 @@ export {
   fb,
   tw,
   youtube,
+  a,
+  Dt,
+  Qt,
+  Nc,
+  Cm 
 };

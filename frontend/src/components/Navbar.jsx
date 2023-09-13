@@ -48,7 +48,7 @@ const Navbar = () => {
                                 // style={{border: '1px solid', display: 'flex',alignItems: 'center', height: '4.9rem'}} 
                             onClick={() => setActive(nav.title)}
                         >
-                            <a className="text-white  hover:text-white " href={`#${nav.id}`}>{nav.title}</a>
+                            <a className="text-white  hover:text-white " href={`${nav.id}`}>{nav.title}</a>
                         </li>
                     ))}
                     <img src={user} alt='user' className='w-8 h-8 ' />

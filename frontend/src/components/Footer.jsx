@@ -4,26 +4,25 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="w-screen border h-96   bg-footerColor" >
-            <div className=" flex  sm:flex-row h-full flex-col">
+        <footer className="w-full border bg-footerColor">
+            <div className="container mx-auto py-8 flex flex-col sm:flex-row space-y-4">
 
-                <div className="basis-1/2 flex justify-center  ">
-                    <div className="flex-col justify-center items-center ">
-                        <img src={logo} alt='logo' className='w-64 h-52  object-contain' />
-                        <div className="flex justify-center gap-2  h-fit mt-[-3rem]  ml-20 ">
-                            <img src={insta} alt='insta' className='w-7 h-10 object-contain ' />
-                            <img src={fb} alt='fb' className='w-7 h-10 object-contain' />
-                            <img src={tw} alt='tw' className='w-7 h-10 object-contain' />
-                            <img src={youtube} alt='youtube' className='w-7 h-10 object-contain' />
+                <div className="w-full sm:w-1/2 flex justify-center items-center">
+                    <div className="flex flex-col justify-center items-center space-y-2 sm:space-y-0">
+                        <img src={logo} alt='logo' className='w-52 h-36 object-contain' />
+                        <div className="flex justify-center space-x-2 mt-2">
+                            <img src={insta} alt='insta' className='w-7 h-7 object-contain' />
+                            <img src={fb} alt='fb' className='w-7 h-7 object-contain' />
+                            <img src={tw} alt='tw' className='w-7 h-7 object-contain' />
+                            <img src={youtube} alt='youtube' className='w-7 h-7 object-contain' />
                         </div>
                     </div>
                 </div>
 
-
-                <div className=" basis-1/3 p-4 flex items-center justify-center  ">
-                    <div className="flex flex-col items-center space-y-4">
-                        <h4 className="text-2xl font-semibold">Useful Links</h4>
-                        <nav className="flex flex-col space-y-4">
+                <div className="w-full sm:w-1/4 p-4 flex flex-col items-center space-y-2 justify-center">
+                    
+                        <h4 className="text-lg font-semibold">Useful Links</h4>
+                        <div className="flex flex-col space-y-2">
                             <NavLink to="/" className="text-white">
                                 Home
                             </NavLink>
@@ -39,53 +38,58 @@ const Footer = () => {
                             <NavLink to="/aboutUs" className="text-white">
                                 About Us
                             </NavLink>
-                        </nav>
-                    </div>
+                        </div>
                 </div>
 
-
-                <div className="w-1/3 p-4  flex flex-col justify-center items-center">
-                    <h4 className="text-2xl font-semibold mb-4 mt-[-3rem]">Services</h4>
-                    <nav className="flex flex-col items-center">
+                <div className="w-full sm:w-1/4 p-4 flex flex-col justify-center items-center space-y-2 ">
+                    <h4 className="text-lg font-semibold">Services</h4>
+                    <nav className="flex flex-col items-center space-y-4">
                         <NavLink
                             to="/"
-                            className="text-white hover:text-blue-700 transition duration-300 mb-5"
+                            className="text-white hover:text-blue-700 transition duration-300"
                         >
                             Residential Construction
                         </NavLink>
                         <NavLink
                             to="/services"
-                            className="text-white hover:text-blue-700 transition duration-300 mb-5"
+                            className="text-white hover:text-blue-700 transition duration-300"
                         >
                             Commercial Construction
                         </NavLink>
                         <NavLink
                             to="/portfolio"
-                            className="text-white hover:text-blue-700 transition duration-300 mb-5"
+                            className="text-white hover:text-blue-700 transition duration-300"
                         >
                             Industrial Construction
                         </NavLink>
                     </nav>
                 </div>
 
-                <div className="w-1/3 p-4 flex flex-col justify-center items-center">
-                    <h4 className="text-2xl font-semibold  mt-[-3rem] mb-5">Contact Us</h4>
-                    <address className="text-center space-y-5">
-                        <p>+917408252302</p>
-                        <p>Infixra@gmail.com </p>
-                        <p>Near Ashish Royal Tower, Bareilly</p>
+                <div className="w-full sm:w-1/4 p-4 flex flex-col justify-center items-center space-y-4">
+                    <h4 className="text-lg font-semibold  mb-2">Contact Us</h4>
+                    <address className="text-center space-y-4">
+                        <p className="text-white">+917408252302</p>
+                        <p className="text-white">Infixra@gmail.com</p>
+                        <p className="text-white">Near Ashish Royal Tower, Bareilly</p>
                     </address>
                 </div>
-
             </div>
-            <div className="-mt-10 border-t-2 mx-auto flex justify-between w-5/6 ">
-                <h6 className="text-[.8rem] mx-9">© 2023 INFIXRA </h6>
-                <div className="flex flex-row gap-11 mx-9">
-                    <Link to="/privacy" className="text-white " >Privacy Policy</Link>
-                    <Link to="/terms" className="text-white" >Terms & Conditions </Link>
+
+            <div className="border-t-2 mx-auto flex  sm:flex-row justify-between w-full sm:w-5/6 py-4">
+                <h6 className="text-xs mx-4 sm:mx-9 text-white sm:text-left">
+                    © 2023 INFIXRA
+                </h6>
+                <div className="flex flex-row gap-4 sm:gap-11 mx-4 sm:mx-9">
+                    <Link to="/privacy" className="text-white text-xs sm:text-left">
+                        Privacy Policy
+                    </Link>
+                    <Link to="/terms" className="text-white text-xs sm:text-left">
+                        Terms & Conditions
+                    </Link>
                 </div>
             </div>
-        </footer >
+        </footer>
+
     )
 }
 

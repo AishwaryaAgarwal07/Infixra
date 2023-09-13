@@ -10,7 +10,8 @@ export default {
         tertiary: "#08088f",
         footerColor:"#061124",
         navColor:"#0b1015",
-        hover:"#1c6aab"
+        hover:"#1c6aab",
+        heading:"#161950"
       },
       screens: {
         xs: "450px",

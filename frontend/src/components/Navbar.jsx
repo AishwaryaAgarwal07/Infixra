@@ -21,7 +21,9 @@ const Navbar = () => {
                 z-20 
                 bg-navColor`
                 }
-                style={{border: '1px solid white'}}
+
+                //may use in future!
+                // style={{border: '1px solid white'}}
         >
             <div className=' w-full flex justify-between items-center max-w-8xl mx-auto'>
                 <Link

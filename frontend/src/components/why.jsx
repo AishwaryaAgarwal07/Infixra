@@ -9,8 +9,8 @@ const Portfolio = () => {
                     <img src={a} alt="a" className="w-full sm:w-96 object-contain" />
                 </div>
                 <div className="w-full sm:w-1/2 p-4 sm:p-6 space-y-5">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-heading">
-                        Why choose INFIXRA?
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-heading">
+                        Why choose INFIXRA? 
                     </h1>
                     <p className="text-base sm:text-lg text-black">
                         We always strive to provide 'Best in class' service, guaranteed by our experienced in-house Design & Construction team. A complete hassle-free experience from beginning to end.

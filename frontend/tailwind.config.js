@@ -14,11 +14,14 @@ export default {
         heading:"#161950"
       },
       screens: {
-        xs: "450px",
+        xs: "450px", 
       },
       backgroundImage: {
+
         "work-bg": "url('/src/assets/workbg.jpg')",
-      },
+
+        'custom-name': "url('/src/assets//Tophouse.jpg')",
+      }
     },
   },
   plugins: [],

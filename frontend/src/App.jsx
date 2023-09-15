@@ -1,7 +1,7 @@
 
 import { BrowserRouter } from "react-router-dom";
 
-import { Navbar, Hero, Services, Why, Footer } from "./components";
+import { Navbar, Hero, Services,Working, Why, Footer } from "./components";
 
 function App() {
 
@@ -11,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       {/* <Services /> */}
+      <Working/>
       <Why />
       <Footer />
     </BrowserRouter>

@@ -16,6 +16,9 @@ export default {
       screens: {
         xs: "450px",
       },
+      backgroundImage: {
+        "work-bg": "url('/src/assets/workbg.jpg')",
+      },
     },
   },
   plugins: [],

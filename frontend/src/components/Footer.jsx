@@ -1,5 +1,5 @@
 import React from 'react'
-import { logo, insta, fb, tw, youtube, } from '../assets'
+import { logo, insta, fb, lin, youtube, } from '../assets'
 import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
@@ -10,35 +10,53 @@ const Footer = () => {
                 <div className="w-full sm:w-1/2 flex justify-center items-center">
                     <div className="flex flex-col justify-center items-center space-y-2 sm:space-y-0">
                         <img src={logo} alt='logo' className='w-52 h-36 object-contain' />
-                        <div className="flex justify-center space-x-2 mt-2">
-                            <img src={insta} alt='insta' className='w-7 h-7 object-contain' />
-                            <img src={fb} alt='fb' className='w-7 h-7 object-contain' />
-                            <img src={tw} alt='tw' className='w-7 h-7 object-contain' />
-                            <img src={youtube} alt='youtube' className='w-7 h-7 object-contain' />
+                        <div className="flex justify-center space-x-4 mt-2">
+                            <img
+                                src={insta}
+                                alt="insta"
+                                className="w-7 h-7 object-contain hover:w-5 transition ease-in duration-300 "
+                            />
+                            <img
+                                src={fb}
+                                alt="fb"
+                                className="w-7 h-7 object-contain hover:w-5 transition ease-in duration-300 "
+                            />
+                            <img
+                                src={lin}
+                                alt="lin"
+                                className="w-7 h-7 object-contain hover:w-5 transition ease-in duration-300 "
+                            />
+                            <img
+                                src={youtube}
+                                alt="youtube"
+                                className="w-7 h-7 object-contain hover:w-5 transition ease-in duration-300 "
+                            />
                         </div>
+
+
                     </div>
                 </div>
 
                 <div className="w-full sm:w-1/4 p-4 flex flex-col items-center space-y-2 justify-center">
-                    
-                        <h4 className="text-lg font-semibold">Useful Links</h4>
-                        <div className="flex flex-col space-y-2">
-                            <NavLink to="/" className="text-white">
-                                Home
-                            </NavLink>
-                            <NavLink to="/services" className="text-white">
-                                Services
-                            </NavLink>
-                            <NavLink to="/portfolio" className="text-white">
-                                Portfolio
-                            </NavLink>
-                            <NavLink to="/blog" className="text-white">
-                                Blog
-                            </NavLink>
-                            <NavLink to="/aboutUs" className="text-white">
-                                About Us
-                            </NavLink>
-                        </div>
+
+                    <h4 className="text-lg font-semibold">Useful Links</h4>
+                    <div className="flex flex-col space-y-2">
+                        <NavLink to="/" className="text-white">
+                            Home
+                        </NavLink>
+                        <NavLink to="/services" className="text-white">
+                            Services
+                        </NavLink>
+                        <NavLink to="/portfolio" className="text-white">
+                            Portfolio
+                        </NavLink>
+                        <NavLink to="/blog" className="text-white">
+                            Blog
+                        </NavLink>
+                        <NavLink to="/aboutUs" className="text-white">
+                            About Us
+                        </NavLink>
+                    </div>
                 </div>
 
                 <div className="w-full sm:w-1/4 p-4 flex flex-col justify-center items-center space-y-2 ">

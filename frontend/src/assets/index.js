@@ -9,15 +9,12 @@ import insta from "./insta.svg";
 import fb from "./fb.svg";
 import lin from "./lin.svg";
 import youtube from "./youtube.svg";
-
-
 import a from "./a.svg";
 import Dt from "./Dt.svg";
 import Qt from "./Qt.svg";
 import Nc from "./Nc.svg";
 import Cm from "./Cm.svg";
-import topHeroImage from "./heroTopImage.svg"
-
+import topHeroImage from "./righthouse.svg"
 import arrow from "./arrow.svg";
 import Requirment from "./requirements-icons.png"
 import residential from "./residential-icon.png"

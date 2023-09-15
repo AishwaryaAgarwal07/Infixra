@@ -4,7 +4,7 @@ import Hero from "./hero";
 import Services from './Services';
 import Why from './why';
 import Footer from './Footer';
-import Working from './working';
+import HowItWorks from './HowItWorks';
 
 export {
   Navbar,
@@ -12,5 +12,5 @@ export {
   Services,
   Why,
   Footer,
-  Working
+  HowItWorks
 }

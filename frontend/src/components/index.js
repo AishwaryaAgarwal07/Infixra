@@ -5,6 +5,8 @@ import Services from './Services';
 import Why from './why';
 import Footer from './Footer';
 import HowItWorks from './HowItWorks';
+import Quotes from "./quoets"
+import Portfolio from "./Portfolio";
 
 export {
   Navbar,
@@ -12,5 +14,7 @@ export {
   Services,
   Why,
   Footer,
-  HowItWorks
+  HowItWorks,
+  Quotes,
+  Portfolio,
 }

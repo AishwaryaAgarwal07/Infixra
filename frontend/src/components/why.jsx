@@ -4,7 +4,7 @@ import { a, Dt, Qt, Nc, Cm } from "../assets";
 const Portfolio = () => {
     return (
         <section className="bg-white border p-4 sm:p-6 md:p-8 lg:p-10">
-        <div className="flex justify-center items-center -mt-16 mb-10 "><button>Get a free estimate now</button></div>
+        <div className="flex justify-center items-center -mt-10 sm:-mt-16 mb-10 m-auto  bg-black w-fit border rounded p-3 hover:bg-white hover:text-black">Get a free estimate now</div>
             
             <div className="flex flex-col-reverse sm:flex-row items-center justify-center">
                 <div className="w-full sm:w-1/2 sm:px-4 sm:flex justify-center">

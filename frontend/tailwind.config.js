@@ -21,6 +21,8 @@ export default {
         "work-bg": "url('/src/assets/workbg.jpg')",
 
         'custom-name': "url('/src/assets//Tophouse.jpg')",
+
+        "Quotes-Bg":"url('/src/assets//quotesbg.svg')",
       }
     },
   },

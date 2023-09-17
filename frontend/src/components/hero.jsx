@@ -16,7 +16,7 @@ const Hero = () => {
             <li>Interior design</li>
           </ul>
         </div>
-        <img className="h-1/5 mx-40" src={topHeroImage} alt="Left House Image" />
+        {/* <img className="h-1/5 mx-40" src={topHeroImage} alt="Left House Image" /> */}
       </div>
     </div>
   );

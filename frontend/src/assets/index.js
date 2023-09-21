@@ -21,7 +21,10 @@ import topHeroImage from "./righthouse.svg"
 import arrow from "./arrow.svg";
 import Requirment from "./requirements-icons.png"
 import residential from "./residential-icon.png"
+import industrial from "./industrial-icon.png"
+import commercial from "./commercial-icon.png"
 import CostEstimation from "./costEstimation-icon.png"
+import service from "./service-arrow.svg"
 import schedule from "./schedule-icon.png"
 import work from "./workExecution.svg"
 import delivery from "./delivery.svg"
@@ -42,8 +45,11 @@ export {
   user,
   logo,
   heroBg,
+  service,
   topHeroImage,
   insta,
+  commercial,
+  industrial,
   fb,
   lin,
   youtube,

@@ -1,14 +1,14 @@
 import React from 'react'
 import { a, Dt, Qt, Nc, Cm } from "../assets";
 
-const Portfolio = () => {
+const Why = () => {
     return (
         <section className="bg-white border p-4 sm:p-6 md:p-8 lg:p-10">
         <div className="flex justify-center items-center -mt-10 sm:-mt-16 mb-10 m-auto  bg-black w-fit border rounded p-3 hover:bg-white hover:text-black hover:border-black cursor-pointer">Get a free estimate now</div>
             
             <div className="flex flex-col-reverse sm:flex-row items-center justify-center">
-                <div className="w-full sm:w-1/2 sm:px-4 sm:flex justify-center">
-                    <img src={a} alt="a" className="w-full sm:w-96 object-contain" />
+                <div className="w-full sm:w-1/2 sm:px-4 sm:flex justify-center ">
+                    <img src={a} alt="a" className="w-[30rem] mx-auto sm:w-96 object-contain" />
                 </div>
                 <div className="w-full sm:w-1/2 p-4 sm:p-6 space-y-5">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-heading">
@@ -51,4 +51,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Why

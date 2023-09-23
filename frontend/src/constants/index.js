@@ -11,27 +11,27 @@ import {   p1,
 
 export const navLinks = [
     {
-        id: "/",
+        link: "/",
         title: "Home",
     },
     {
-        id: "services",
+        link: "/services",
         title: "Services",
     },
     {
-        id: "portfolio",
+        link: "/portfolio",
         title: "Portfolio",
     },
     {
-        id: "e-Monitoring",
+        link: "/e-Monitoring",
         title: "E-Monitoring",
     },
     {
-        id: "about",
+        link: "/about",
         title: "About us",
     },
     {
-        id: "contact",
+        link: "/contact",
         title: "Contact us",
     },
 ];

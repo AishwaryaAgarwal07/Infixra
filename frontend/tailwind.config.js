@@ -24,8 +24,9 @@ export default {
       backgroundImage: {
         "services-background": "url('/src/assets/services.png')",
         "work-bg": "url('/src/assets/workbg.jpg')",
-        'custom-name': "url('/src/assets//Tophouse.jpg')",
-        "Quotes-Bg":"url('/src/assets//quotesbg.svg')",
+        'custom-name': "url('/src/assets/Tophouse.jpg')",
+        "Quotes-Bg":"url('/src/assets/quotesbg.svg')",
+        "Contact-bg":"url('/src/assets/ContactUS/Contactbg.jpg')",
       }
     },
   },

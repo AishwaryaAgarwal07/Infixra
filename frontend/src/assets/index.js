@@ -39,6 +39,12 @@ import p7 from "./portfolio/p7.svg"
 import p8 from "./portfolio/p8.svg"
 
 
+import telephone from "./ContactUS/telephone.svg"
+import email from "./ContactUS/email.png"
+import phone from "./ContactUS/phone.svg"
+import Location from "./ContactUS/location.png"
+
+
 export {
   menu,
   close,
@@ -72,5 +78,10 @@ export {
   p5,
   p6,
   p7,
-  p8
+  p8,
+
+  telephone,
+  phone,
+  email,
+  Location
 };

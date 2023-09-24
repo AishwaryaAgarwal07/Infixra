@@ -27,7 +27,7 @@ export const navLinks = [
         title: "E-Monitoring",
     },
     {
-        link: "/about",
+        link: "/aboutUs",
         title: "About us",
     },
     {

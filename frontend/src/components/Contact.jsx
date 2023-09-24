@@ -38,21 +38,21 @@ const Contact = () => {
 
 
   return (
-    <div className=" mt-20 relative h-auto bg-Contact-bg  bg-cover  bg-no-repeat bg-center">
-      <div className="mb-20">
-        <div className="flex flex-col justify-center items-center sm:flex-row">
-          <div className="w-full sm:w-1/2 mt-4 sm:mt-24 flex flex-col justify-center">
-            <div className="border-zinc-950 p-4 flex flex-col mx-4 sm:mx-28  justify-center">
-              <h1 className="text-slate-600 font-bold p-4 text-center sm:text-left">CONTACT US</h1>
-              <p className="text-slate-600 text-2xl p-4 text-center sm:text-left">We always love to help and talk to our clients</p>
+    <div className=" relative h-auto bg-Contact-bg  bg-cover  bg-no-repeat bg-center">
+      <div className="  mb-20">
+        <div className="  flex flex-col justify-center items-center sm:flex-row">
+          <div className=" w-full  mt-4 sm:mt-20 xl:mx-24 flex flex-col justify-center">
+            <div className=" p-4 flex  flex-col mx-4   justify-center">
+              <h1 className="text-slate-600 font-bold p-4 sm:p-2  text-center text-[2rem] mt-10 sm:text-left sm:text-4xl  xl:text-5xl">CONTACT US</h1>
+              <p className="text-slate-600 text-2xl  p-4 text-center sm:text-left">We always love to help and talk to our clients</p>
             </div>
 
-            <div className="border-red-100 mt-8 sm:mt-16 p-4 flex flex-col mx-4 sm:mx-36 justify-center">
-              <h1 className="text-slate-600 text-3xl p-4 text-center sm:text-left">CONTACT DETAILS</h1>
-              <ul className="text-base sm:text-lg px-4 sm:px-10 p-4 text-black space-y-5">
-                <li className="flex items-center gap-4">
+            <div className=" mt-8 sm:mt-16 p-4  flex flex-col mx-4 sm:mx-14 justify-center">
+              <h1 className="text-slate-600  text-2xl p-4  sm:-mx-8 text-center  sm:text-left">CONTACT DETAILS</h1>
+              <ul className="text-base sm:text-lg px-4   p-4 sm:p-5  text-black space-y-5">
+                <li className="  w-56 flex items-center gap-4 sm:gap-5 ">
                   <img src={phone} alt="phone" className="w-10 h-10 object-contain" />
-                  <div className='flex flex-col'>
+                  <div className='flex flex-col '>
                     <span>Phone number</span>
                     <a href="+91 111 222 3456">+91 111 222 3456</a>
                   </div>
@@ -75,7 +75,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className=" w-full sm:w-1/3 mt-4 sm:mt-24 border-zinc-950 p-4 flex">
+          <div className="   w-full  mt-4 sm:mt-24 xl:mt-40 p-4 flex">
             <img className="w-[20rem] mx-auto sm:w-96 object-contain " src={telephone} />
           </div>
 

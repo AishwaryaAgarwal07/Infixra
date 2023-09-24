@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, Outlet } from 'react-router-dom';
-import { styles } from '../styles';
+import { Link} from 'react-router-dom';
 import { navLinks } from '../constants';
 import { logo, menu, close, user } from '../assets'
 
@@ -11,21 +10,21 @@ const Navbar = () => {
     return (
         <>
             <nav
-                className={
-                    `${styles.paddingX}
+                className="
+                sm:px-16 px-6
                 w-full 
                 flex 
                 items-center 
                 fixed 
                 top-0 
                 z-20 
-                bg-navColor`
-                }
+                bg-navColor
+                "
 
             //may use in future!
             // style={{border: '1px solid white'}}
             >
-                <div className=' w-full flex justify-between items-center max-w-8xl mx-auto'>
+                <div className=' w-full h-14 flex justify-between items-center max-w-8xl mx-auto'>
                     <Link
                         to='/'
                         className='flex items-center'
@@ -39,25 +38,25 @@ const Navbar = () => {
                         Infixra
                     </p> */}
                     </Link>
-                    <ul className='list-none hidden sm:flex flex-row  items-center gap-10 h-20'
+                    <ul className='list-none hidden ad:flex flex-row  items-center gap-10 h-14 '
                     // style={{border: '1px solid'}} 
                     >
                         {navLinks.map((nav) => (
                             <li
                                 key={nav.link}
                                 className={`${active === nav.title ? "bg-hover " : "text-black"
-                                    }  hover:bg-hover text-[18px] font-medium  flex items-center h-full  cursor-pointer `}
-                                // style={{border: '1px solid', display: 'flex',alignItems: 'center', height: '4.9rem'}} 
+                                    }  hover:bg-hover text-[18px]  font-medium  flex items-center  h-full  cursor-pointer `}
+                                // style={{border: '1px solid' , width: '5rem' }} 
                                 onClick={() => setActive(nav.title)}
                             >
                                 <Link to={`${nav.link}`} className="text-white  hover:text-white" >{nav.title}</Link>
                             </li>
                         ))}
-                        <img src={user} alt='user' className='w-8 h-8 ' />
+                        <img src={user} alt='user' className='w-8 h-8  sm:w-6 sm:h-6' />
                     </ul>
 
                     {/* small screen */}
-                    <div className='sm:hidden flex flex-1 justify-end items-center'>
+                    <div className='ad:hidden flex flex-1 justify-end items-center'>
                         <img
                             src={toggle ? close : menu}
                             alt='menu'
@@ -66,7 +65,7 @@ const Navbar = () => {
                         />
                         <div
                             className={`${!toggle ? "hidden" : "flex"
-                                } p-6 purple-gradient absolute top-20 right-0 mx-1  my-1 min-w-[140px] z-10 rounded-xl`
+                                } p-6 bg-black absolute top-16 right-0 mx-1  my-1 min-w-[140px] z-10 rounded-xl`
                             }
                         // style={{border: '1px solid'}} 
                         >
@@ -81,7 +80,7 @@ const Navbar = () => {
                                             setActive(nav.title);
                                         }}
                                     >
-                                        <Link className="text-white  hover:text-white" to={`#${nav.link}`}>{nav.title}</Link>
+                                        <Link className="text-white  hover:text-white" to={`${nav.link}`}>{nav.title}</Link>
                                     </li>
                                 ))}
                             </ul>

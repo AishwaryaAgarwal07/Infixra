@@ -5,7 +5,10 @@ import {   p1,
     p5,
     p6,
     p7,
-    p8 
+    p8,
+    residential,
+    industrial,
+    commercial
 } from "../assets"
 
 
@@ -94,6 +97,28 @@ export const work = [
         xyz:"G+1"
     },
 ];
+
+export const services = [
+    {
+        image: residential,
+        heading: "RESIDENTIAL CONSTRUCTION",
+        description: "Appartment/lndependent house/Villa Guest house/Farm house",
+        button: "BOOK NOW"
+    },
+    {
+        image: commercial,
+        heading: "COMMERCIAL CONSTRUCTION",
+        description: "Commercial complex/Corporate office/Showroom/Retail/Industry/Hotel/Resot",
+        button: "BOOK NOW"
+    },
+    {
+        image: industrial,
+        heading: "INDUSTRIAL CONSTRUCTION",
+        description: "Factory/lndustry/warehouse",
+        button: "BOOK NOW"
+    },
+    
+]
 
 
 

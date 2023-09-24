@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Services = () => {
+const AboutUs = () => {
   return (
-    
     <div className="w-screen relative">
-    <div>Services</div>
+      <div>AboutUs</div>
     </div>
+    
   )
 }
 
-export default Services
+export default AboutUs

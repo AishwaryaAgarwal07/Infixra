@@ -15,7 +15,8 @@ export default {
         heroButton: "#f6ec72"
       },
       screens: {
-        xs: "450px", 
+        xs: "450px",
+        ad:"1000px", 
       },
       height: {
         '100': '35rem',

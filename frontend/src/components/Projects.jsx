@@ -47,14 +47,4 @@ const Projects = () => {
   );
 };
 
-<<<<<<< Updated upstream
-            <button className=" flex justify-center items-center   m-auto mt-9  bg-secondary text-white fond-bold w-72 border rounded-2xl p-2   drop-shadow-xl text-3xl font-extrabold hover:bg-white hover:text-secondary "> More Projects</button>
-        </section>
-
-    )
-}
-
-export default Projects
-=======
 export default Projects;
->>>>>>> Stashed changes

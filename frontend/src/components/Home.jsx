@@ -29,9 +29,9 @@ const Home = () => {
             </div>
             <img className="h-16 mt-2.5" src={service} alt="arrow-image" />
             <div>
-              {service.map((works, index) => (
+              {/* {service.map((works, index) => (
                 <Cards key={service.key}/>
-              ))}
+              ))} */}
             </div>
           </div>
         </div>

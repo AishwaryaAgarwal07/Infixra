@@ -7,6 +7,7 @@ import {
     p6,
     p7,
     p8,
+
     office,
     corporate,
     resort,
@@ -17,6 +18,11 @@ import {
     GuestHouse,
     FarmHouse,
     house,
+  
+    residential,
+    industrial,
+    commercial
+
 } from "../assets"
 
 import blogDetails from "./featuredBlog"
@@ -104,6 +110,28 @@ export const work = [
         xyz: "G+1"
     },
 ];
+
+export const services = [
+    {
+        image: residential,
+        heading: "RESIDENTIAL CONSTRUCTION",
+        description: "Appartment/lndependent house/Villa Guest house/Farm house",
+        button: "BOOK NOW"
+    },
+    {
+        image: commercial,
+        heading: "COMMERCIAL CONSTRUCTION",
+        description: "Commercial complex/Corporate office/Showroom/Retail/Industry/Hotel/Resot",
+        button: "BOOK NOW"
+    },
+    {
+        image: industrial,
+        heading: "INDUSTRIAL CONSTRUCTION",
+        description: "Factory/lndustry/warehouse",
+        button: "BOOK NOW"
+    },
+    
+]
 
 
 export const commercialCons = [

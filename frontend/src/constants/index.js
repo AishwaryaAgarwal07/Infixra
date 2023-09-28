@@ -10,7 +10,23 @@ import {
   residential,
   industrial,
   commercial,
+  office,
+  corporate,
+  resort,
+  factory,
+  retail,
+  Appartment,
+  villa,
+  GuestHouse,
+  FarmHouse,
+  house,
 } from "../assets";
+
+import blogDetails from "./featuredBlog"
+
+export {
+  blogDetails
+}
 
 export const navLinks = [
   {
@@ -119,3 +135,76 @@ export const services = [
     button: "BOOK NOW",
   },
 ];
+
+
+export const commercialCons = [
+  {
+      title: "Office",
+      image: office
+  },
+  {
+      title: "Retail Showroom",
+      image: retail
+  },
+  {
+      title: "Corporate office",
+      image: corporate
+  },
+  {
+      title: "Hotel/resort",
+      image: resort
+  },
+  {
+      title: "Factory/industry",
+      image: factory
+  },
+
+]
+export const IndustrialCons = [
+  {
+      title: "Office",
+      image: office
+  },
+  {
+      title: "Retail Showroom",
+      image: retail
+  },
+  {
+      title: "Corporate office",
+      image: corporate
+  },
+  {
+      title: "Hotel/resort",
+      image: resort
+  },
+  {
+      title: "Factory/industry",
+      image: factory
+  },
+
+]
+
+export const residentialCons = [
+  {
+      title: "Appartment",
+      image: Appartment
+  },
+  {
+      title: "Villa",
+      image: villa
+  },
+  {
+      title: "Independent House",
+      image: house
+  },
+  {
+      title: "Farm House",
+      image: FarmHouse
+  },
+  {
+      title: "Guest House",
+      image: GuestHouse
+  },
+
+]
+

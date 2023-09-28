@@ -44,9 +44,6 @@ const Footer = () => {
                         <NavLink to="/" className="text-white">
                             Home
                         </NavLink>
-                        <NavLink to="/services" className="text-white">
-                            Services
-                        </NavLink>
                         <NavLink to="/portfolio" className="text-white">
                             Portfolio
                         </NavLink>
@@ -63,19 +60,19 @@ const Footer = () => {
                     <h4 className="text-lg font-semibold">Services</h4>
                     <nav className="flex flex-col items-center space-y-4">
                         <NavLink
-                            to="/"
+                            to="/rc"
                             className="text-white hover:text-blue-700 transition duration-300"
                         >
                             Residential Construction
                         </NavLink>
                         <NavLink
-                            to="/services"
+                            to="/cc"
                             className="text-white hover:text-blue-700 transition duration-300"
                         >
                             Commercial Construction
                         </NavLink>
                         <NavLink
-                            to="/portfolio"
+                            to="/ic"
                             className="text-white hover:text-blue-700 transition duration-300"
                         >
                             Industrial Construction

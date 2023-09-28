@@ -12,7 +12,8 @@ export default {
         navColor:"#0b1015",
         hover:"#1c6aab",
         heading:"#161950",
-        heroButton: "#f6ec72"
+        heroButton: "#f6ec72",
+        bh:"#BAB254",
       },
       screens: {
         xs: "450px",
@@ -28,6 +29,8 @@ export default {
         'custom-name': "url('/src/assets/Tophouse.jpg')",
         "Quotes-Bg":"url('/src/assets/quotesbg.svg')",
         "Contact-bg":"url('/src/assets/ContactUS/Contactbg.jpg')",
+        "side-bg":"url('/src/assets/ContactUs/blog-side-bg.png')",
+        "Appointment-bg":"url('/src/assets/Services/AppoinmentBg.png')",
       }
     },
   },

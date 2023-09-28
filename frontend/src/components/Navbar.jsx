@@ -1,11 +1,25 @@
 import React, { useEffect, useState } from 'react'
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { navLinks } from '../constants';
-import { logo, menu, close, user } from '../assets'
+import { logo, menu, close, user, service } from '../assets'
 
 const Navbar = () => {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
+
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    const toggleDropdown = () => {
+        setIsDropdownOpen(!isDropdownOpen);
+    };
+
+    const handleMouseEnter = () => {
+        setIsDropdownOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsDropdownOpen(false);
+    };
 
     return (
         <>
@@ -24,7 +38,7 @@ const Navbar = () => {
             //may use in future!
             // style={{border: '1px solid white'}}
             >
-                <div className=' w-full h-14 flex justify-between items-center max-w-8xl mx-auto'>
+                <div className=' w-full h-16 flex justify-between items-center max-w-8xl mx-auto'>
                     <Link
                         to='/'
                         className='flex items-center'
@@ -52,6 +66,34 @@ const Navbar = () => {
                                 <Link to={`${nav.link}`} className="text-white  hover:text-white" >{nav.title}</Link>
                             </li>
                         ))}
+
+                        <li
+                            key="services"
+                            // style={{border: '1px solid' , width: '5rem' }} 
+                            onClick={() => setActive(service)}
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
+                        >
+                            <div
+                                className={`${active === service ? "bg-hover " : "text-black"
+                                    }  hover:bg-hover text-[18px]  font-medium  flex items-center  h-14  cursor-pointer text-white  hover:text-white `}
+
+                            >
+                                Services
+                            </div>
+                            {isDropdownOpen && (
+                                <div className="absolute right-0 mt-0 bg-white border border-gray-300 w-auto p-1 rounded-lg shadow-lg">
+                                    {/* Dropdown content goes here */}
+                                    <Link to="/cc" class="block px-4 py-2 hover:bg-hover dark:hover:text-white">COMMERCIAL CONSTRUCTION</Link>
+                                    <Link to="/rc" class="block px-4 py-2 hover:bg-hover dark:hover:text-white">RESIDENTIAL CONSTRUCTION</Link>
+                                    <Link to="/ic" class="block px-4 py-2 hover:bg-hover dark:hover:text-white">INDUSTRIAL CONSTRUCTION</Link>
+                                </div>
+                            )}
+
+
+                        </li>
+
+
                         <img src={user} alt='user' className='w-8 h-8  sm:w-6 sm:h-6' />
                     </ul>
 
@@ -83,12 +125,37 @@ const Navbar = () => {
                                         <Link className="text-white  hover:text-white" to={`${nav.link}`}>{nav.title}</Link>
                                     </li>
                                 ))}
+
+
+                                <li
+                                    key="services"
+                                    // style={{border: '1px solid' , width: '5rem' }} 
+                                    onClick={() => setActive(service)}
+
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}
+                                >
+                                    <div className={`  hover:bg-hover font-poppins font-medium flex items-center w-full cursor-pointer text-[16px] ${active === service ? "bg-hover" : "text-black"
+                                        } text-white  hover:text-white `}>
+                                        Services
+                                    </div>
+                                    {isDropdownOpen && (
+                                        <div className="absolute right-0 mt-1 bg-black  border w-auto p-1 rounded-lg shadow-lg ">
+                                            {/* Dropdown content goes here */}
+                                            <Link to="/cc" class="block px-4 py-2 hover:bg-hover  dark:hover:text-white  text-white  hover:text-white ">COMMERCIAL CONSTRUCTION</Link>
+                                            <Link to="/rc" class="block px-4 py-2 hover:bg-hover dark:hover:text-white  text-white  hover:text-white ">RESIDENTIAL CONSTRUCTION</Link>
+                                            <Link to="/ic" class="block px-4 py-2 hover:bg-hover dark:hover:text-white  text-white  hover:text-white ">INDUSTRIAL CONSTRUCTION</Link>
+                                        </div>
+                                    )}
+
+
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </nav>
-            
+
         </>
     )
 }

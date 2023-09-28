@@ -11,11 +11,13 @@ const Card = ({
     xyz
 }) => {
     return (
-        <div className="border flex flex-col relative w-[30rem]  sm:w-[20rem]  sm:h-[25rem] md:h-[27rem]">
+
+        <div className="  border flex flex-col relative w-[30rem] hover:scale-110 transition-all duration-500 sm:w-[20rem]  sm:h-[25rem] md:h-[27rem]  ">
+
             <img
                 src={image}
                 alt='project_image'
-                className='w-full h-4/6  sm:h-2/3  object-cover '
+                className='w-full h-4/6  sm:h-2/3  object-cover  '
             />
             <div className='m-6 flex justify-between '>
                 <div className='flex flex-col space-y-3'>
@@ -45,7 +47,7 @@ const Projects = () => {
                 ))}
             </div>
 
-            <button className=" flex justify-center items-center   m-auto mt-9  bg-secondary text-white fond-bold w-72 border rounded-2xl p-2   drop-shadow-xl text-3xl font-extrabold hover:border-white "> More Projects</button>
+            <button className=" flex justify-center items-center   m-auto mt-9  bg-secondary text-white fond-bold w-72 border rounded-2xl p-2   drop-shadow-xl text-3xl font-extrabold hover:bg-white hover:text-secondary "> More Projects</button>
         </section>
 
     )

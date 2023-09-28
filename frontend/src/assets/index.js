@@ -39,11 +39,28 @@ import p7 from "./portfolio/p7.svg"
 import p8 from "./portfolio/p8.svg"
 
 
-import telephone from "./ContactUS/telephone.svg"
+import telephone from "./ContactUS/telephone.png"
 import email from "./ContactUS/email.png"
 import phone from "./ContactUS/phone.svg"
 import Location from "./ContactUS/location.png"
 
+import i1 from "./Blog/i1.png"
+import i2 from "./Blog/i2.png"
+import i3 from "./Blog/i3.png"
+
+import cHero from "./Services/commHero.png"
+import office from "./Services/office.png"
+import corporate from "./Services/corporate.png"
+import resort from "./Services/resort.png"
+import retail from "./Services/retail.png"
+import factory from "./Services/factory.png"
+
+import resHero from "./Services/resHero.png"
+import house from "./Services/house.png"
+import FarmHouse from "./Services/FarmHouse.png"
+import GuestHouse from "./Services/GuestHouse.png"
+import Appartment from "./Services/Appartment.png"
+import villa from "./Services/villa.png"
 
 export {
   menu,
@@ -83,5 +100,23 @@ export {
   telephone,
   phone,
   email,
-  Location
+  Location,
+
+  i1,
+  i2,
+  i3,
+
+  cHero,
+  office,
+  corporate,
+  resort,
+  factory,
+  retail,
+
+  resHero,
+  Appartment,
+  villa,
+  GuestHouse,
+  FarmHouse,
+  house,
 };

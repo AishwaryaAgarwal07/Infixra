@@ -15,6 +15,8 @@ import EMonitoring from "./EMonitoring";
 import AboutUs from "./AboutUs";
 import Contact from "./Contact";
 import Blog from "./Blog.jsx";
+import Terms from "./Terms.jsx";
+import Privacy_Policy from "./Privacy_Policy.jsx";
 
 export {
   Home,
@@ -33,4 +35,6 @@ export {
   AboutUs,
   Contact,
   Blog,
+  Terms,
+  Privacy_Policy
 }

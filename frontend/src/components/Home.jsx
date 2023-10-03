@@ -5,11 +5,12 @@ import Quotes from "./quoets";
 import HowItWorks from "./HowItWorks";
 import Why from "./why";
 import { service } from "../assets";
+import { services } from "../constants";
 
 const Cards = ({ image, heading,description,button }) => {
   return (
     <div>
-      <h1>{service.title}</h1>
+      <h1>{heading}</h1>
     </div>
   );
 };
@@ -29,9 +30,9 @@ const Home = () => {
             </div>
             <img className="h-16 mt-2.5" src={service} alt="arrow-image" />
             <div>
-              {/* {service.map((works, index) => (
-                <Cards key={service.key}/>
-              ))} */}
+              {services.map((service, index) => (
+                <Cards key={`project-${index}`} index={index} {...service} />
+              ))}
             </div>
           </div>
         </div>

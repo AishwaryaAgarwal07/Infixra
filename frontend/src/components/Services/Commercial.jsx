@@ -30,23 +30,23 @@ const Commercial = () => {
     return (
         <div className=" mt-10 relative bg-white">
             <div className="bg-custom-name z-0 bg-cover mt-5 h-100 flex flex-row bg-no-repeat bg-center">
-            <div className="flex flex-col p-20 sm:p-10">
-                    <div className="p-4 sm:p-2 mr-32 ">
+            <div className="flex flex-col p-16 sm:p-10 lg:p-28">
+                    <div className="p-2 sm:p-2 mr-32 ">
                         <h1 className="text-4xl font-bold">Commertial Constructions </h1>
-                        <p className="text-xl mt-5 leading-8  text-justify">Commercial construction involves building structures for commercial purposes, with a focus on functionality, efficiency, and meeting the needs of the business. 🏢🔨</p>
+                        <p className="text-xl mt-0 leading-8  text-justify">Commercial construction involves building structures for commercial purposes, with a focus on functionality, efficiency, and meeting the needs of the business. 🏢🔨</p>
                     </div>
                     <div className="flex rounded text-2xl mt-32 text-black cursor-pointer">
                         <p className="p-2 rounded bg-heroButton">Book a free consultation</p>
                         <p className="p-2 rounded hover:ml-3 bg-heroButton ml-1">→</p>
                     </div>
                 </div>
-                <img className="  mt-14 h-96 sm:h-[25rem] md:h-100  md:ml-60 sm:-ml-60 sm:mt-56" src={cHero} alt="Left House Image" />
+                <img className="  p-2 mt-52 h-[28rem] -ml-28 sm:h-[25rem] md:h-[25rem] md:mr-[1rem]  lg:h-[30rem]   md:-ml-60 sm:-ml-60 sm:mt-56" src={cHero} alt="Left House Image" />
             </div>
 
             <div className=" h-auto m-10 p-20">
-                <button className="text-xl w-1/3 ">SCHEDULE AN APPOINTMENT</button>
-                <div className="rounded-2xl  bg-Appointment-bg bg-no-repeat bg-center mt-10 border-2 shadow-lg  shadow-violet-700 border-violet-700">
-                    <div className="flex flex-wrap justify-between h-auto  p-14 gap-10  ">
+                <button className="text-xl w-2/3 sm:w-fit">SCHEDULE AN APPOINTMENT</button>
+                <div className="rounded-2xl   mt-10 border-2 shadow-lg  shadow-violet-700 border-violet-700">
+                <div className="flex flex-wrap   justify-between  md:p-5 md:justify-around lg:p-10  p-14 gap-10  sm:gap-y-20 sm:p-20  ">
 
                         {commercialCons.map((works, index) => (
                             <Card key={`project-${index}`} index={index} {...works} />

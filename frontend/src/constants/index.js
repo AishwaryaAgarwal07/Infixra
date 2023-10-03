@@ -34,10 +34,6 @@ export const navLinks = [
     title: "Home",
   },
   {
-    link: "/services",
-    title: "Services",
-  },
-  {
     link: "/portfolio",
     title: "Portfolio",
   },

@@ -142,9 +142,9 @@ const Navbar = () => {
                                     {isDropdownOpen && (
                                         <div className="absolute right-0 mt-1 bg-black  border w-auto p-1 rounded-lg shadow-lg ">
                                             {/* Dropdown content goes here */}
-                                            <Link to="/cc" class="block px-4 py-2 hover:bg-hover  dark:hover:text-white  text-white  hover:text-white ">COMMERCIAL CONSTRUCTION</Link>
-                                            <Link to="/rc" class="block px-4 py-2 hover:bg-hover dark:hover:text-white  text-white  hover:text-white ">RESIDENTIAL CONSTRUCTION</Link>
-                                            <Link to="/ic" class="block px-4 py-2 hover:bg-hover dark:hover:text-white  text-white  hover:text-white ">INDUSTRIAL CONSTRUCTION</Link>
+                                            <Link to="/cc" className="block px-4 py-2 hover:bg-hover  dark:hover:text-white  text-white  hover:text-white ">COMMERCIAL CONSTRUCTION</Link>
+                                            <Link to="/rc" className="block px-4 py-2 hover:bg-hover dark:hover:text-white  text-white  hover:text-white ">RESIDENTIAL CONSTRUCTION</Link>
+                                            <Link to="/ic" className="block px-4 py-2 hover:bg-hover dark:hover:text-white  text-white  hover:text-white ">INDUSTRIAL CONSTRUCTION</Link>
                                         </div>
                                     )}
 

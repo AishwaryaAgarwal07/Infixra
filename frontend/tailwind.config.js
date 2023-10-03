@@ -31,6 +31,7 @@ export default {
         "Contact-bg":"url('/src/assets/ContactUS/Contactbg.jpg')",
         "side-bg":"url('/src/assets/ContactUs/blog-side-bg.png')",
         "Appointment-bg":"url('/src/assets/Services/AppoinmentBg.png')",
+        "TC-bg":"url('/src/assets/tcBg.avif')"
       }
     },
   },

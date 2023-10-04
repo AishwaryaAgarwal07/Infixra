@@ -47,6 +47,7 @@ import Location from "./ContactUS/location.png"
 import i1 from "./Blog/i1.png"
 import i2 from "./Blog/i2.png"
 import i3 from "./Blog/i3.png"
+import i4 from "./Blog/i4.jpeg"
 
 import cHero from "./Services/commHero.png"
 import office from "./Services/office.png"
@@ -105,6 +106,7 @@ export {
   i1,
   i2,
   i3,
+  i4,
 
   cHero,
   office,

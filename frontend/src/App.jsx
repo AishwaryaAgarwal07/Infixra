@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router , Route, Routes  } from "react-router-dom";
-import { Navbar, Footer,Home,Contact, Residential,Commercial,Industrial, EMonitoring,AboutUs, Portfolio,Blog,Terms,Privacy_Policy} from "./components";
+import { Navbar, Footer,Home,Contact, Residential,Commercial,Industrial, EMonitoring,AboutUs, Portfolio,Blog,Detailblog,Terms,Privacy_Policy} from "./components";
 
 
 function App() {
@@ -17,7 +17,10 @@ function App() {
         <Route  path="/e-Monitoring" element={<EMonitoring/>} />
         <Route  path="/aboutUs" element={<AboutUs/>} />
         <Route  path="/contact" element={<Contact/>} />
+
         <Route  path="/blog" element={<Blog/>} />
+        <Route path="/blog/:id" element={<Detailblog/>} />
+        
         <Route  path="/terms" element={<Terms/>} />
         <Route  path="/privacy" element={<Privacy_Policy/>} />
 

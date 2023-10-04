@@ -114,21 +114,20 @@ export const services = [
   {
     image: residential,
     heading: "RESIDENTIAL CONSTRUCTION",
-    description: "Appartment/lndependent house/Villa Guest house/Farm house",
-    button: "BOOK NOW",
+    description: "Appartment/House/Guest house/Farm house",
+    button: "BOOK NOW"
   },
   {
     image: commercial,
     heading: "COMMERCIAL CONSTRUCTION",
-    description:
-      "Commercial complex/Corporate office/Showroom/Retail/Industry/Hotel/Resot",
-    button: "BOOK NOW",
+    description: "Commercial complex/Showroom/Industry/Hotel/Resot",
+    button: "BOOK NOW"
   },
   {
     image: industrial,
     heading: "INDUSTRIAL CONSTRUCTION",
-    description: "Factory/lndustry/warehouse",
-    button: "BOOK NOW",
+    description: "Factory/lndustry/Warehouse",
+    button: "BOOK NOW"
   },
 ];
 

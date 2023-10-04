@@ -3,7 +3,7 @@ import { work } from "../constants";
 
 const Card = ({ image, title, place, size, xyz }) => {
   return (
-    <div className="border flex flex-col relative w-[30rem]  sm:w-[20rem]  sm:h-[25rem] md:h-[27rem]">
+    <div className="border flex flex-col relative w-[30rem]  hover:scale-110 transition-all duration-500 sm:w-[20rem]  sm:h-[25rem] md:h-[27rem]">
       <img
         src={image}
         alt="project_image"

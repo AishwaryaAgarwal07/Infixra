@@ -14,10 +14,13 @@ export default {
         heading:"#161950",
         heroButton: "#f6ec72",
         bh:"#BAB254",
+        serviceHeading:"#eae6b5",
+        "portfolio-bg":"#e4e7fa"
       },
       screens: {
         xs: "450px",
-        ad:"1000px", 
+        ad:"1000px",
+        hs:"990px", 
       },
       height: {
         '100': '35rem',
@@ -31,7 +34,8 @@ export default {
         "Contact-bg":"url('/src/assets/ContactUS/Contactbg.jpg')",
         "side-bg":"url('/src/assets/ContactUs/blog-side-bg.png')",
         "Appointment-bg":"url('/src/assets/Services/AppoinmentBg.png')",
-        "TC-bg":"url('/src/assets/tcBg.avif')"
+        "TC-bg":"url('/src/assets/tcBg.avif')",
+        
       }
     },
   },

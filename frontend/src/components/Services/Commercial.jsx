@@ -33,7 +33,7 @@ const Commercial = () => {
             <div className="flex flex-col p-16 sm:p-10 lg:p-28">
                     <div className="p-2 sm:p-2 mr-32 ">
                         <h1 className="text-4xl font-bold">Commertial Constructions </h1>
-                        <p className="text-xl mt-0 leading-8  text-justify">Commercial construction involves building structures for commercial purposes, with a focus on functionality, efficiency, and meeting the needs of the business. 🏢🔨</p>
+                        <p className="text-xl lg:mt-8 leading-8  text-justify text-serviceHeading">Commercial construction involves building structures for commercial purposes, with a focus on functionality, efficiency, and meeting the needs of the business. 🏢🔨</p>
                     </div>
                     <div className="flex rounded text-2xl mt-32 text-black cursor-pointer">
                         <p className="p-2 rounded bg-heroButton">Book a free consultation</p>

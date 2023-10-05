@@ -30,7 +30,7 @@ const Residential = () => {
                 <div className="flex flex-col p-20 sm:p-10 lg:p-28">
                     <div className="p-2 sm:p-2 mr-32 ">
                         <h1 className="text-4xl font-bold">RESIDENTIAL CONSTRUCTION </h1>
-                        <p className="text-xl mt-5 leading-8  text-justify">Residential construction involves building safe, comfortable homes with attention to detail for high-quality results. 🏠🔨</p>
+                        <p className="text-xl lg:mt-8 leading-8  text-justify text-serviceHeading">Residential construction involves building safe, comfortable homes with attention to detail for high-quality results. 🏠🔨</p>
                     </div>
                     <div className="flex rounded text-2xl mt-32 text-black cursor-pointer">
                         <p className="p-2 rounded bg-heroButton">Book a free consultation</p>

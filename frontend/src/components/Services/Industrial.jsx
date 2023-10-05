@@ -33,7 +33,7 @@ const Industrial = () => {
                 <div className="flex flex-col p-20 sm:p-10 lg:p-28">
                     <div className="p-4 sm:p-2 mr-32 ">
                         <h1 className="text-4xl font-bold">Industrial Constructions </h1>
-                        <p className="text-xl mt-5 leading-8  text-justify">Industrial construction involves building structures for Industrial purposes, with a focus on functionality, efficiency, and meeting the needs of the business. 🏢🔨</p>
+                        <p className="text-xl lg:mt-8 leading-8  text-justify text-serviceHeading">Industrial construction involves building structures for Industrial purposes, with a focus on functionality, efficiency, and meeting the needs of the business. 🏢🔨</p>
                     </div>
                     <div className="flex rounded text-2xl mt-20 text-black cursor-pointer">
                         <p className="p-2 rounded bg-heroButton">Book a free consultation</p>

@@ -15,7 +15,8 @@ export default {
         heroButton: "#f6ec72",
         bh:"#BAB254",
         serviceHeading:"#eae6b5",
-        "portfolio-bg":"#e4e7fa"
+        "portfolio-bg":"#e4e7fa",
+        "aboutUs-hero":"#67677c"
       },
       screens: {
         xs: "450px",
@@ -25,8 +26,10 @@ export default {
       height: {
         '100': '35rem',
         '125': '50rem',
+        '150': '80rem'
       },
       backgroundImage: {
+        "aboutus-background": "url('/src/assets/AboutUs/hero-bg.jpg')",
         "services-background": "url('/src/assets/services.png')",
         "work-bg": "url('/src/assets/workbg.jpg')",
         'custom-name': "url('/src/assets/Tophouse.jpg')",

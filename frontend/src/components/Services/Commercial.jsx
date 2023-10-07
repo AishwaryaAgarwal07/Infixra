@@ -30,7 +30,7 @@ const Commercial = () => {
     return (
         <div className=" mt-10 relative bg-white">
             <div className="bg-custom-name z-0 bg-cover mt-5 h-100 flex flex-row bg-no-repeat bg-center">
-            <div className="flex flex-col p-16 sm:p-10 lg:p-28">
+                <div className="flex flex-col p-16 sm:p-10 lg:p-28">
                     <div className="p-2 sm:p-2 mr-32 ">
                         <h1 className="text-4xl font-bold">Commertial Constructions </h1>
                         <p className="text-xl lg:mt-8 leading-8  text-justify text-serviceHeading">Commercial construction involves building structures for commercial purposes, with a focus on functionality, efficiency, and meeting the needs of the business. 🏢🔨</p>

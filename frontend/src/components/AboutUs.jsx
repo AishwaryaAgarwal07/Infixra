@@ -32,24 +32,11 @@ const AboutUs = () => {
         </div>
 
         {/* Form */}
-        <div className="h-100 bg-white text-black flex flex-col items-center justify-center">
-          <div className="w-1/2 text-center">
+      <div className="h-100 bg-white text-black flex flex-col items-center justify-center">
+         <div className="w-1/2 text-center">
           <p className=" text-xm font-bold">Ready to embark on your construction journey with us? Contact New Horizon Builders today to discuss your project, request a consultation, or receive a personalized quote. We're eager to take the first step toward building a better future together.</p>
-          <p className="text-3xl mt-10">JOIN OUR TEAM</p>
-
-          {/* Main form */}
-
-          <form class="w-full p-4 bg-white rounded shadow">
-            <div class="">
-              <input class="w-full px-3 py-2 leading-loose  text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="input1" type="text" placeholder="Name"/>
-              <input class="w-full px-3 py-2 leading-loose mt-2 text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="input2" type="text" placeholder="Email"/>
-              <input class="w-full px-3 py-2 leading-loose mt-2 text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="input3" type="text" placeholder="Phone no."/>
-              <input class="w-full px-3 py-10 leading-loose mt-2 text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline" id="input4" type="text" placeholder="Messege"/>
-            </div>
-          </form>
         </div>
-        <p class="bg-blue-900 rounded text-white pt-2 pb-2 pl-8 pr-8 cursor-pointer hover:bg-blue-700 transition-colors duration-200">SUBMIT</p>
-        </div>
+      </div>
       </div>
     </div>
   )

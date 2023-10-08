@@ -25,8 +25,10 @@ export default {
       },
       height: {
         '100': '35rem',
+        '115': '45rem',
         '125': '50rem',
-        '150': '80rem'
+        '150': '80rem',
+        '200': '100rem'
       },
       backgroundImage: {
         "aboutus-background": "url('/src/assets/AboutUs/hero-bg.jpg')",

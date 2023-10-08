@@ -62,6 +62,7 @@ import FarmHouse from "./Services/FarmHouse.png"
 import GuestHouse from "./Services/GuestHouse.png"
 import Appartment from "./Services/Appartment.png"
 import villa from "./Services/villa.png"
+import aboutTop from "./AboutUs/top-left-hero.svg"
 
 export {
   menu,
@@ -121,4 +122,5 @@ export {
   GuestHouse,
   FarmHouse,
   house,
+  aboutTop,
 };

@@ -16,7 +16,7 @@ export default {
         bh:"#BAB254",
         serviceHeading:"#eae6b5",
         "portfolio-bg":"#e4e7fa",
-        "aboutUs-hero":"#67677c"
+        "aboutUs-hero":"#67677c",
       },
       screens: {
         xs: "450px",

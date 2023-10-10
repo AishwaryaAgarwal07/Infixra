@@ -62,19 +62,19 @@ const Portfolio = () => {
     const visibleWorks = showAllCards ? work : work.slice(0, 2);
     return (
         <div className=" mt-10 relative bg-portfolio-bg">
-            <div className="bg-custom-name  bg-cover mt-5 h-100  flex flex-row justify-between items-center bg-no-repeat bg-center ">
-                <div className="flex flex-col p-20 md:p-16   hs:p-16 ad:p-5 ad:pt-14 lg:p-20 lg:ml-20 ">
-                    <div className="   mr-32 mt-5 ad:mx-7 ">
-                        <h1 className="  md:-mr-7 text-5xl  sm:text-[2.6rem] md:text-[2rem] hs:text-[1.8rem] lg:text-5xl   lfont-bold">OUR PORTFOLIO </h1>
-                        <h1 className= " text-4xl sm:text-3xl  md:text-2xl lg:text-4xl   mt-8 leading-8  mx-6 sm:mx-7 text-heroButton">BUILD UP AREA</h1>
-                        <h1 className=" text-5xl   md:text-4xl  lg:text-5xl    font-bold mt-7 sm:mt-2  text-heroButton" >10,000 SQ FT</h1>
+            <div className="bg-custom-name   bg-cover mt-5 h-100  flex flex-row justify-between items-center bg-no-repeat bg-center ">
+                <div className="flex flex-col p-20 md:p-0  md:mx-10 mx-auto  hs:p-16 ad:p-5 ad:pt-14 lg:p-20 lg:ml-20 ">
+                    <div className="  mt-5 ad:mx-7 flex flex-col justify-center  items-center  ">
+                        <h1 className="  text-7xl   md:text-[2rem] hs:text-[1.8rem] lg:text-5xl   lfont-bold">OUR PORTFOLIO </h1>
+                        <h1 className= " text-4xl  md:text-2xl  lg:text-4xl   mt-8 leading-8  text-heroButton">BUILD UP AREA</h1>
+                        <h1 className=" text-6xl  md:text-4xl  lg:text-5xl    font-bold mt-7   text-heroButton" >10,000 SQ FT</h1>
                     </div>
-                    <div className="flex rounded text-2xl mt-32 text-black cursor-pointer">
+                    <div className="flex mx-32 rounded border md:justify-center  text-2xl mt-32 text-black cursor-pointer">
                         <p className="p-2 rounded bg-heroButton">Book a free consultation</p>
-                        <p className="p-2 rounded hover:ml-3 bg-heroButton ml-1">→</p>
+                        <p className="p-2 rounded hover:ml-3 md:flex md:items-center  bg-heroButton ml-1">→</p>
                     </div>
                 </div>
-                <div className="w-1/4 sm:w-1/3 p-2  mr-3 mt-52  sm:mt-32  md:mt-44 hs:mt-60 ad:mt-28  ">
+                <div className="w-1/4 sm:w-1/3  hidden md:block  md:mt-44 hs:mt-60 ad:mt-28  ">
                 <img className=" lg:w-80 " src={resHero} alt="Left House Image" />
                 </div>
             </div>

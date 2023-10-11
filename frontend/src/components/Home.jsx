@@ -28,7 +28,7 @@ const Home = () => {
             <Hero />
 
             {/* Services */}
-            <div className="relative h-auto bg-services-background  bg-cover bg-no-repeat bg-center">
+            <div className="w-screen relative h-auto bg-services-background  bg-cover bg-no-repeat bg-center">
                 <div className=" h-full z-10 flex flex-row text-[10px] ">
                     <div className="flex justify-center items-center p-4 font-bold bg-blue-600 opacity-70 border  text-black text-center  ">
                         <h1 className=" font-extrabold text-black text-3xl sm:text-2xl ">Services we provide</h1>

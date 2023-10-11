@@ -19,7 +19,7 @@ const Blog = () => {
     const filteredBlogPosts = filterBlogPosts(selectedCategory);
 
     return (
-        <div className="mt-10 h-[90vh] relative">
+        <div className="w-screen mt-10 h-[90vh] relative">
             <div className="p-10 bg-custom-name z-0 bg-cover bg-no-repeat bg-center ">
                 <h1 className=" mx-10 font-bold">BLOG</h1>
                 <h2 className=" mx-10 text-bh text-2xl  ">{selectedCategory === "All" ? "" : selectedCategory}</h2>
@@ -40,7 +40,7 @@ const Blog = () => {
                     </div>
                 </div>
 
-                <div className="  w-1/3 bg-side-bg flex flex-col   ">
+                <div className="h-1/2 w-1/3 bg-side-bg flex flex-col   ">
                     <div className=" mt-10 mx-10  ">
                         <h1 className="text-bh text-2xl  ">THE INFIXRA - Blog</h1>
                         <p className="text-stone-500 p-2 justify-center ">Explore our website's engaging blog for expert opinions, how-to guides, and the latest industry trends.</p>

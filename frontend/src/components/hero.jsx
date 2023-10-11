@@ -3,7 +3,7 @@ import { topHeroImage } from "../assets";
 
 const Hero = () => {
   return (
-    <div className="mt-10 relative">
+    <div className="w-screen mt-10 relative">
       {/* Div for background image */}
       <div style={{ height: "110vh" }} className="bg-custom-name z-0 bg-cover bg-no-repeat bg-center"></div>
 
@@ -23,7 +23,7 @@ const Hero = () => {
             <p className="p-2 rounded hover:ml-3 bg-heroButton ml-1">→</p>
           </div>
         </div>
-        <img className=" mt-14 h-96 sm:h-[30rem] md:h-100  md:ml-60 " src={topHeroImage} alt="Left House Image" />
+        <img className="hidden md:block mt-14 h-96 sm:h-[30rem] md:h-100  md:ml-60" src={topHeroImage} alt="Left House Image" />
       </div>
     </div>
   );

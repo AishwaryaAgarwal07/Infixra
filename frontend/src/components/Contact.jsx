@@ -38,10 +38,10 @@ const Contact = () => {
 
 
     return (
-        <div className=" relative h-auto w-screen  bg-Contact-bg  bg-cover  bg-no-repeat bg-center">
-            <div className="  mb-20">
-                <div className="  flex flex-col justify-center items-center sm:flex-row">
-                    <div className="  mt-4 sm:mt-20 xl:mx-24 flex flex-col justify-center">
+        <div className="relative h-auto w-screen  bg-Contact-bg  bg-cover  bg-no-repeat bg-center">
+            <div className="mb-20">
+                <div className="flex flex-col justify-center items-center sm:flex-row">
+                    <div className="mt-4 sm:mt-20 xl:mx-24 flex flex-col justify-center">
                         <div className=" p-4 flex  flex-col mx-4   justify-center">
                             <h1 className="text-slate-600 font-bold p-4 sm:p-2  text-center text-[2rem] mt-10 sm:text-left sm:text-4xl  xl:text-5xl">CONTACT US</h1>
                             <p className="text-slate-600 text-2xl  p-4 text-center sm:text-left">We always love to help and talk to our clients</p>
@@ -75,7 +75,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="   w-full  mt-4 sm:mt-24 xl:mt-40 p-4 flex">
+                    <div className="w-full  mt-4 sm:mt-24 xl:mt-40 p-4 flex">
                         <img className="w-[20rem] mx-auto sm:w-96 object-contain " src={telephone} />
                     </div>
 

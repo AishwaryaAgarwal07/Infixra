@@ -27,7 +27,6 @@ const Hero = () => {
                 <img className=" hidden sm:block sm:mt-24 sm:h-96 md:h-[28rem] lg:ml-72 " src={topHeroImage} alt="Left House Image" />
             </div>
         </div>
-    );
 };
 
 export default Hero;

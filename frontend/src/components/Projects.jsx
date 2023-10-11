@@ -3,7 +3,7 @@ import { work } from "../constants";
 
 const Card = ({ image, title, place, size, xyz }) => {
   return (
-    <div className="border flex flex-col relative w-[30rem]  hover:scale-110 transition-all duration-500 sm:w-[20rem]  sm:h-[25rem] md:h-[27rem]">
+    <div className="border flex flex-col relative w-screen  hover:scale-110 transition-all duration-500 sm:w-[20rem]  sm:h-[25rem] md:h-[27rem]">
       <img
         src={image}
         alt="project_image"
@@ -21,14 +21,14 @@ const Card = ({ image, title, place, size, xyz }) => {
           <h6 className="text-secondary  sm:text-md flex justify-end">{xyz}</h6>
         </div>
       </div>
-      <hr className="border-secondary m-auto  border-[.1rem] w-[25rem] sm:w-[20rem] md:w-[17rem]" />
+      <hr className="border-secondary m-auto  border-[.1rem] w-56 mb-4  sm:w-[20rem] md:w-[17rem]" />
     </div>
   );
 };
 
 const Projects = () => {
   return (
-    <section className="bg-white  p-4 sm:p-6 md:p-8 lg:p-10">
+    <section className="bg-white  p-3 sm:p-6 md:p-8 lg:p-10 lg:w-[99.9%]">
       <div className=" flex justify-center items-center   m-auto  bg-white text-secondary fond-bold w-72 border rounded-2xl p-4 hover:border-2  drop-shadow-xl text-3xl font-extrabold hover:border-secondary ">
         Our Portfolio
       </div>

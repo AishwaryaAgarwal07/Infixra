@@ -14,8 +14,8 @@ const Cards = ({ image, heading, description, button }) => {
                 <img src={image} alt="Industry images" className="h-20 w-20  sm:h-16 sm:w-16 md:h-16 md:w-20" />
             </div>
             <div className="flex flex-col  ">
-                <p className="text-2xl">{heading}</p>
-                <p className="text-sm mt-2">{description}</p>
+                <p className=" text-2xl">{heading}</p>
+                <p className=" text-sm mt-2">{description}</p>
             </div>
             <p className="text-xl rounded mt-10 text-white  bg-blue-600 opacity-75 p-4 hover:outline-none hover:ring-2 hover:ring-white cursor-pointer">{button}</p>
         </div>
@@ -24,17 +24,17 @@ const Cards = ({ image, heading, description, button }) => {
 
 const Home = () => {
     return (
-        <>
+        <div className="w-screen lg:w-[99%] ">
             <Hero />
 
             {/* Services */}
-            <div className="relative h-auto bg-services-background  bg-cover bg-no-repeat bg-center">
-                <div className=" h-full z-10 flex flex-row text-[10px] ">
-                    <div className="flex justify-center items-center p-4 font-bold bg-blue-600 opacity-70 border  text-black text-center  ">
-                        <h1 className=" font-extrabold text-black text-3xl sm:text-2xl ">Services we provide</h1>
+            <div className="relative   bg-services-background  bg-cover bg-no-repeat bg-center border">
+                <div className=" h-full z-10 flex flex-col md:flex-row text-[10px] ">
+                    <div className="flex justify-center items-center p-6 font-bold bg-blue-600 opacity-70  text-black text-center  ">
+                        <h1 className=" font-bold text-white text-3xl sm:text-2xl md:text-3xl ">Services we provide</h1>
                         <img className="w-14 sm:w-10 md:w-9 lg:w-12" src={service} alt="arrow-image" />
                     </div>
-                    <div className="flex flex-col md:justify-between md:items-center border sm:flex-row p-4 gap-y-16 ">
+                    <div className="flex flex-col md:justify-between md:items-center  lg:flex-row p-4 gap-y-16 ">
                         {services.map((service, index) => (
                             <Cards key={`project-${index}`} index={index} {...service} />
                         ))}
@@ -47,7 +47,7 @@ const Home = () => {
             <Quotes />
             <HowItWorks />
             <Why />
-        </>
+        </div>
     );
 };
 

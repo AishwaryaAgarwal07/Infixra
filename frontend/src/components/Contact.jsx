@@ -47,7 +47,7 @@ const Contact = () => {
                             <p className="text-slate-600 text-2xl  p-4 text-center sm:text-left">We always love to help and talk to our clients</p>
                         </div>
 
-                        <div className=" mt-8 sm:mt-16 p-4  flex flex-col mx-4 sm:mx-14 justify-center">
+                        <div className=" mt-8 sm:mt-16 p-4  flex flex-col mx-4 sm:mx-14 justify-center border border-red-600">
                             <h1 className="text-slate-600  text-2xl p-4  sm:-mx-8 text-center  sm:text-left">CONTACT DETAILS</h1>
                             <ul className="text-base sm:text-lg px-4   p-4 sm:p-5  text-black space-y-5">
                                 <li className="  w-56 flex items-center gap-4 sm:gap-5 ">
@@ -75,6 +75,7 @@ const Contact = () => {
                         </div>
                     </div>
 
+
                     <div className="w-full  mt-4 sm:mt-24 xl:mt-40 p-4 flex">
                         <img className="w-[20rem] mx-auto sm:w-96 object-contain " src={telephone} />
                     </div>
@@ -82,7 +83,7 @@ const Contact = () => {
                 </div>
 
 
-                <div className="h-auto flex justify-center">
+                <div className="h-auto flex justify-center border border border-red-600">
                     <form className="flex-form border-6 p-4 " onSubmit={handleSubmit}>
                         <h1 className="text-slate-600 text-2xl mx-20 p-4">JOIN OUR TEAM</h1>
 
@@ -99,12 +100,12 @@ const Contact = () => {
                                 name="name"
                                 value={formData.name}
                                 onChange={handleChange}
-                                className="peer block min-h-[auto] w-[25rem] rounded border bg-transparent py-[0.32rem] px-3 leading-[2] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-secondary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-slate-400 dark:placeholder:text-slate-400 dark:peer-focus:text-secondary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-1"
+                                className="peer block min-h-[auto] w-[23rem] md:w-[25rem] rounded border bg-transparent py-[0.32rem] px-3 leading-[2] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-secondary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-slate-400 dark:placeholder:text-slate-400 dark:peer-focus:text-secondary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-1"
                                 placeholder="Name"
                             />
                         </div>
 
-                        <div className="mb-6">
+                        <div className="mb-6 ">
                             {/* <label
             htmlFor="email"
             className="block text-secondary mb-2"
@@ -117,7 +118,7 @@ const Contact = () => {
                                 name="email"
                                 value={formData.email}
                                 onChange={handleChange}
-                                className="peer block min-h-[auto] w-[25rem] rounded border bg-transparent py-[0.32rem] px-3 leading-[2] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-secondary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-slate-400 dark:placeholder:text-slate-400 dark:peer-focus:text-secondary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-1"
+                                className="peer block min-h-[auto] w-[23rem] md:w-[25rem] rounded border bg-transparent py-[0.32rem] px-3 leading-[2] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-secondary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-slate-400 dark:placeholder:text-slate-400 dark:peer-focus:text-secondary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-1"
                                 placeholder="Email address"
                             />
                         </div>
@@ -135,7 +136,7 @@ const Contact = () => {
                                 name="phone"
                                 value={formData.phone}
                                 onChange={handleChange}
-                                className="peer block min-h-[auto] w-[25rem] rounded border bg-transparent py-[0.32rem] px-3 leading-[2] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-secondary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-slate-400 dark:placeholder:text-slate-400 dark:peer-focus:text-secondary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-1"
+                                className="peer block min-h-[auto] w-[23rem] md:w-[25rem] rounded border bg-transparent py-[0.32rem] px-3 leading-[2] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-secondary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-slate-400 dark:placeholder:text-slate-400 dark:peer-focus:text-secondary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-1"
                                 placeholder="Phone number"
                             />
                         </div>
@@ -152,7 +153,7 @@ const Contact = () => {
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
-                                className="peer block min-h-[auto] w-[25rem] rounded border bg-transparent py-[0.32rem] px-3 leading-[2] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-slate-400 dark:placeholder:text-slate-400 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-1"
+                                className="peer block min-h-[auto] w-[23rem] md:w-[25rem] rounded border bg-transparent py-[0.32rem] px-3 leading-[2] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-slate-400 dark:placeholder:text-slate-400 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-1"
                                 rows="3"
                                 placeholder="Your message"
                             ></textarea>

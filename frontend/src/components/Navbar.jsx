@@ -23,11 +23,11 @@ const Navbar = () => {
 
     return (
         <nav
-            className="sm:px-16 px-6 w-full flex items-center fixed top-0 z-20 bg-navColor"
+            className="sm:px-16 px-6 w-screen  flex items-center fixed  z-20 bg-navColor"
 
 
         >
-            <div className=' w-full h-16 flex justify-between items-center max-w-8xl mx-auto'>
+            <div className=' w-full  h-16 flex justify-between items-center  mx-auto'>
                 <Link
                     to='/'
                     className='flex items-center'

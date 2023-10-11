@@ -3,9 +3,9 @@ import { topHeroImage } from "../assets";
 
 const Hero = () => {
     return (
-        <div className="mt-10  relative border lg:w-[99.9%] ">
+        <div className="mt-10  relative  lg:w-[99.9%] ">
             {/* Div for background image */}
-            <div className="bg-custom-name h-100 md:h-[98vh] z-0 bg-cover bg-no-repeat bg-center"></div>
+            <div className="bg-custom-name h-100 md:h-[98vh] lg:h-[110vh] z-0 bg-cover bg-no-repeat bg-center"></div>
 
             <div className="absolute mt-12 top-0 left-0 z-10 flex flex-row  p-4 md:p-5 xl:mx-32  ">
                 {/* Hero text div */}
@@ -27,6 +27,7 @@ const Hero = () => {
                 <img className=" hidden sm:block sm:mt-24 sm:h-96 md:h-[28rem] lg:ml-72 " src={topHeroImage} alt="Left House Image" />
             </div>
         </div>
+    );
 };
 
 export default Hero;

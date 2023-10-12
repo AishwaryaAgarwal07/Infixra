@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="  bg-footerColor w-screen lg:w-[99%]  ">
+        <footer className="  bg-footerColor w-screen  ">
             <div className="container mx-auto py-8 flex flex-col sm:flex-row space-y-4">
 
                 <div className="w-full sm:w-1/2 flex justify-center items-center">

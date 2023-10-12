@@ -24,7 +24,7 @@ const Cards = ({ image, heading, description, button }) => {
 
 const Home = () => {
     return (
-        <div className="w-screen  ">
+        <div className="w-screen ">
             <Hero />
 
             {/* Services */}

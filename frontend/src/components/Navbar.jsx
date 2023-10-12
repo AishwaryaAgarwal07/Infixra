@@ -23,7 +23,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className="sm:px-16 px-6 w-screen  flex items-center fixed  z-20 bg-navColor"
+            className="sm:px-16 px-6 w-screen flex items-center fixed  z-20 bg-navColor "
 
 
         >

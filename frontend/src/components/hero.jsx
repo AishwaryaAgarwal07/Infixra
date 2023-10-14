@@ -3,7 +3,7 @@ import { topHeroImage } from "../assets";
 
 const Hero = () => {
     return (
-        <div className="mt-10  relative ">
+        <div className="mt-10  relative  ">
             {/* Div for background image */}
             <div className="bg-custom-name h-100 md:h-[98vh] lg:h-[110vh] z-0 bg-cover bg-no-repeat bg-center"></div>
 

@@ -3,7 +3,7 @@ import { aboutTop } from '../assets/'
 const AboutUs = () => {
     return (
         <div className="w-screen relative bg-aboutus-background"> 
-            <div className="bg-aboutus-background h-200 bg-cover bg-no-repeat bg-center mt-14 flex flex-col">
+            <div className="bg-aboutus-background h-auto bg-cover bg-no-repeat bg-center mt-14 flex flex-col">
                 <div className="bg-aboutUs-hero h-96 flex flex-row md: justify-between" style={{ backgroundColor: 'rgba(100, 100, 100, 0.5)' }}>
                     <div className="flex flex-col justify-center items-center mt-6 md:w-1/2 md:items-start  font-bold md:px-10  md ">
                         <h1 className="#">About Us</h1>

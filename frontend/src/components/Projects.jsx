@@ -28,12 +28,12 @@ const Card = ({ image, title, place, size, xyz }) => {
 
 const Projects = () => {
   return (
-    <section className="bg-white  p-3 sm:p-6 md:p-8 lg:p-10 lg:w-[99.9%]">
+    <section className="bg-white  p-3 sm:p-6 md:p-8 lg:p-10 w-screen">
       <div className=" flex justify-center items-center   m-auto  bg-white text-secondary fond-bold w-72 border rounded-2xl p-4 hover:border-2  drop-shadow-xl text-3xl font-extrabold hover:border-secondary ">
         Our Portfolio
       </div>
 
-      <div className="h-auto p-7 mt-10   flex flex-wrap gap-6 pb-7 gap-y-14 justify-center">
+      <div className="h-auto p-7  mt-10 border  flex flex-wrap  md:justify-around  pb-7 gap-y-14 justify-center">
         {work.map((works, index) => (
           <Card key={`project-${index}`} index={index} {...works} />
         ))}

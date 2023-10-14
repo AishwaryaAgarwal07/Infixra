@@ -33,7 +33,7 @@ const Card = ({ image, title, size, xyz }) => {
                         <h6 className="text-secondary text-xs sm:text-md  ">ABC Complex</h6>
                         <h6 className="text-secondary text-xs sm:text-md  ">Abc Company</h6>
                     </div>
-                    <div className="flex justify-between mt-4  rounded-3xl px-2 gap-4">
+                    <div className="flex justify-between mt-4  rounded-3xl px-2 gap-4 lg:justify-around">
                         <div className=" mt-4 rounded-3xl px-3 w-52  md:w-40 h-32  border-gray-500 border-2 "></div>
                         <div className=" mt-4 rounded-3xl px-3 w-52  md:w-40 h-32  border-gray-500 border-2 "></div>
                         <div className=" mt-4 rounded-3xl px-3 w-52  md:w-40 h-32  border-gray-500 border-2 "></div>
@@ -61,15 +61,15 @@ const Portfolio = () => {
 
     const visibleWorks = showAllCards ? work : work.slice(0, 2);
     return (
-        <div className=" mt-10 relative bg-portfolio-bg bg-cover w-screen  ">
+        <div className=" mt-10 relative  bg-portfolio-bg bg-cover w-screen  ">
             <div className="bg-custom-name  bg-cover  h-100 md:h-[110vh]  md:flex lg:justify-center  md:items-center  bg-no-repeat bg-center  ">
                 <div className="flex flex-col justify-center  items-center mt-16  md:mx-10 mx-auto   lg:p-16  ">
-                    <div className=" w-full mt-24 md:mt-16 ad:mx-7  flex flex-col justify-center items-center   ">
+                    <div className=" w-full mt-24  md:mt-16  lg:mt-9 ad:mx-7  flex flex-col justify-center items-center lg:justify-start lg:items-start  ">
                         <h1 className="  text-4xl sm:text-5xl  md:text-5xl   font-bold">OUR PORTFOLIO </h1>
                         <h1 className=" text-2xl    md:text-3xl  mt-8 leading-8  text-heroButton">BUILD UP AREA</h1>
                         <h1 className=" text-3xl    md:text-4xl   font-bold mt-7   text-heroButton" >10,000 SQ FT</h1>
                     </div>
-                    <div className="flex gap-3 rounded  md:justify-center p-2  text-2xl sm:text-3xl   mt-32 text-black cursor-pointer">
+                    <div className="flex gap-3 rounded  md:justify-center p-4  text-2xl sm:text-3xl   mt-32 text-black cursor-pointer">
                         <p className=" rounded bg-heroButton sm:p-2 ">Book a free consultation</p>
                         <p className="rounded hover:ml-3 flex justify-center items-center sm:p-2 bg-heroButton ">→</p>
                     </div>

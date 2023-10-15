@@ -4,6 +4,8 @@ import user from "./profile-icon.png";
 import logo from "./main-logo.png";
 import heroBg from "./Tophouse.jpg";
 
+import signup from "./signup.png";
+
 
 import insta from "./insta.svg";
 import fb from "./fb.svg";
@@ -69,6 +71,7 @@ export {
   close,
   user,
   logo,
+  signup,
   heroBg,
   service,
   topHeroImage,

@@ -2,10 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { navLinks } from '../constants';
 import { logo, menu, close, user, service } from '../assets'
+import {Login} from "../components"
 
 const Navbar = () => {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
+    const [open, setOpen] = useState(false)
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -83,7 +85,8 @@ const Navbar = () => {
                     </li>
 
 
-                    <img src={user} alt='user' className='w-8 h-8  sm:w-6 sm:h-6' />
+                    <img src={user} alt='user' className='w-8 h-8  sm:w-6 sm:h-6' onClick={() =>  setOpen(true)} />
+                    {open && <Login  setOpen={ setOpen} />}
                 </ul>
 
                 {/* small screen */}
@@ -113,6 +116,7 @@ const Navbar = () => {
                                 >
                                     <Link className="text-white  hover:text-white" to={`${nav.link}`}>{nav.title}</Link>
                                 </li>
+
                             ))}
 
 
@@ -139,6 +143,8 @@ const Navbar = () => {
 
 
                             </li>
+                            <img src={user} alt='user' className='w-8 h-8  sm:w-6 sm:h-6' onClick={() =>  setOpen(true)} />
+                            {open && <Login  setOpen={ setOpen} />}
                         </ul>
                     </div>
                 </div>

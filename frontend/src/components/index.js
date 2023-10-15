@@ -18,6 +18,8 @@ import Blog from "./Blog.jsx";
 import Detailblog from "./Detailblog.jsx";
 import Terms from "./Terms.jsx";
 import Privacy_Policy from "./Privacy_Policy.jsx";
+import Login from './Login.jsx'
+import SignUp from './SignUp.jsx'
 
 export {
   Home,
@@ -38,5 +40,7 @@ export {
   Blog,
   Detailblog,
   Terms,
-  Privacy_Policy
+  Privacy_Policy,
+  Login,
+  SignUp
 }

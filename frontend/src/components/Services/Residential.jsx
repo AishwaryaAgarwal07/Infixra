@@ -30,7 +30,7 @@ const Residential = () => {
                 <div className=" flex flex-col w-full   justify-center items-center mt-10 ">
                     <div className=" p-5 flex flex-col justify-center">
                         <h1 className="text-4xl font-bold">RESIDENTIAL CONSTRUCTION </h1>
-                        <p className="text-xl mt-8  text-justify text-serviceHeading">Residential construction involves building safe, comfortable homes with attention to detail for high-quality results. 🏠🔨</p>
+                        <p className="text-xl mt-8  text-start text-serviceHeading">Residential construction involves building safe, comfortable homes with attention to detail for high-quality results. 🏠🔨</p>
                     </div>
                     <div className="flex  p-5 w-full justify-center md:justify-start rounded text:xl md:text-2xl mt-24 md:mt-44 text-black cursor-pointer ">
                         <p className="p-2 rounded bg-heroButton">Book a free consultation</p>

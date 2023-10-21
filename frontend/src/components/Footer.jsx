@@ -3,6 +3,11 @@ import { logo, insta, fb, lin, youtube, } from '../assets'
 import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
+
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
+
     return (
         <footer className="  bg-footerColor w-screen  ">
             <div className="container mx-auto py-8 flex flex-col sm:flex-row space-y-4">
@@ -41,16 +46,16 @@ const Footer = () => {
 
                     <h4 className="text-lg font-semibold">Useful Links</h4>
                     <div className="flex flex-col space-y-2">
-                        <NavLink to="/" className="text-white">
+                        <NavLink to="/" className="text-white" onClick={() => scrollToTop()}>
                             Home
                         </NavLink>
-                        <NavLink to="/portfolio" className="text-white">
+                        <NavLink to="/portfolio" className="text-white" onClick={() => scrollToTop()}>
                             Portfolio
                         </NavLink>
-                        <NavLink to="/blog" className="text-white">
+                        <NavLink to="/blog" className="text-white" onClick={() => scrollToTop()}>
                             Blog
                         </NavLink>
-                        <NavLink to="/aboutUs" className="text-white">
+                        <NavLink to="/aboutUs" className="text-white" onClick={() => scrollToTop()}>
                             About Us
                         </NavLink>
                     </div>
@@ -61,19 +66,19 @@ const Footer = () => {
                     <nav className="flex flex-col items-center space-y-4">
                         <NavLink
                             to="/rc"
-                            className="text-white hover:text-blue-700 transition duration-300"
+                            className="text-white hover:text-blue-700 transition duration-300" onClick={() => scrollToTop()}
                         >
                             Residential Construction
                         </NavLink>
                         <NavLink
                             to="/cc"
-                            className="text-white hover:text-blue-700 transition duration-300"
+                            className="text-white hover:text-blue-700 transition duration-300" onClick={() => scrollToTop()}
                         >
                             Commercial Construction
                         </NavLink>
                         <NavLink
                             to="/ic"
-                            className="text-white hover:text-blue-700 transition duration-300"
+                            className="text-white hover:text-blue-700 transition duration-300" onClick={() => scrollToTop()}
                         >
                             Industrial Construction
                         </NavLink>
@@ -95,10 +100,10 @@ const Footer = () => {
                     © 2023 INFIXRA
                 </h6>
                 <div className="flex flex-row gap-4 sm:gap-11 mx-4 sm:mx-9">
-                    <Link to="/privacy" className="text-white text-xs sm:text-left">
+                    <Link to="/privacy" className="text-white text-xs sm:text-left" onClick={() => scrollToTop()}>
                         Privacy Policy
                     </Link>
-                    <Link to="/terms" className="text-white text-xs sm:text-left">
+                    <Link to="/terms" className="text-white text-xs sm:text-left" onClick={() => scrollToTop()}>
                         Terms & Conditions
                     </Link>
                 </div>

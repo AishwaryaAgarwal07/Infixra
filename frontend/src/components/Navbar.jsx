@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { navLinks } from '../constants';
 import { logo, menu, close, user, service } from '../assets'
-import {Login} from "../components"
+import { Login } from "../components"
 
 const Navbar = () => {
     const [active, setActive] = useState("");
@@ -23,6 +23,10 @@ const Navbar = () => {
         setIsDropdownOpen(false);
     };
 
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
+
     return (
         <nav
             className="sm:px-16 px-6 w-screen flex items-center fixed  z-20 bg-navColor "
@@ -35,7 +39,7 @@ const Navbar = () => {
                     className='flex items-center'
                     onClick={() => {
                         setActive("");
-                        window.scrollTo(0, 0);
+                        scrollToTop();
                     }}
                 >
                     <img src={logo} alt='logo' className='w-15 h-10 object-contain' />
@@ -52,7 +56,11 @@ const Navbar = () => {
                             className={`${active === nav.title ? "bg-hover " : "text-black"
                                 }  hover:bg-hover text-[18px]  font-medium  flex items-center  h-full  cursor-pointer `}
                             // style={{border: '1px solid' , width: '5rem' }} 
-                            onClick={() => setActive(nav.title)}
+                            onClick={() => {
+                                setActive(nav.title);
+                                scrollToTop();
+                            }
+                            }
                         >
                             <Link to={`${nav.link}`} className="text-white  hover:text-white" >{nav.title}</Link>
                         </li>
@@ -85,8 +93,8 @@ const Navbar = () => {
                     </li>
 
 
-                    <img src={user} alt='user' className='w-8 h-8  sm:w-6 sm:h-6' onClick={() =>  setOpen(true)} />
-                    {open && <Login  setOpen={ setOpen} />}
+                    <img src={user} alt='user' className='w-8 h-8  sm:w-6 sm:h-6' onClick={() => setOpen(true)} />
+                    {open && <Login setOpen={setOpen} />}
                 </ul>
 
                 {/* small screen */}
@@ -123,7 +131,11 @@ const Navbar = () => {
                             <li
                                 key="services"
                                 // style={{border: '1px solid' , width: '5rem' }} 
-                                onClick={() => setActive(service)}
+                                onClick={() => {
+                                    setActive(service);
+                                    scrollToTop();
+                                }
+                                }
 
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -143,8 +155,8 @@ const Navbar = () => {
 
 
                             </li>
-                            <img src={user} alt='user' className='w-8 h-8  sm:w-6 sm:h-6' onClick={() =>  setOpen(true)} />
-                            {open && <Login  setOpen={ setOpen} />}
+                            <img src={user} alt='user' className='w-8 h-8  sm:w-6 sm:h-6' onClick={() => setOpen(true)} />
+                            {open && <Login setOpen={setOpen} />}
                         </ul>
                     </div>
                 </div>

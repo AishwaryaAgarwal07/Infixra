@@ -1,0 +1,88 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./src/**/*.{js,jsx}"],
+  theme: {
+    extend: {
+      colors: {
+        //main colors
+        primary: "#f8f8f8",
+        secondary: "#2d3061",
+        tertiary: "#08088f",
+        footerColor: "#061124",
+        navColor: "#0b1015",
+        hover: "#1c6aab",
+        heading: "#161950",
+        heroButton: "#f6ec72",
+        bh: "#BAB254",
+        serviceHeading: "#eae6b5",
+        "portfolio-bg": "#e4e7fa",
+        "aboutUs-hero": "#67677c",
+        login: { "50": "#eff6ff", "100": "#dbeafe", "200": "#bfdbfe", "300": "#93c5fd", "400": "#60a5fa", "500": "#3b82f6", "600": "#2563eb", "700": "#1d4ed8", "800": "#1e40af", "900": "#1e3a8a", "950": "#172554" }
+      },
+      screens: {
+        xs: "450px",
+        ad: "1000px",
+        hs: "990px",
+      },
+      height: {
+        '100': '35rem',
+        '115': '45rem',
+        '125': '50rem',
+        '130': '60rem',
+        '150': '80rem',
+        '200': '100rem'
+      },
+      backgroundImage: {
+        "aboutus-background": "url('/src/assets/AboutUs/hero-bg.jpg')",
+        "services-background": "url('/src/assets/services.png')",
+        "work-bg": "url('/src/assets/workbg.jpg')",
+        'custom-name': "url('/src/assets/Tophouse.jpg')",
+        "Quotes-Bg": "url('/src/assets/quotesbg.svg')",
+        "Contact-bg": "url('/src/assets/ContactUS/Contactbg.jpg')",
+        "side-bg": "url('/src/assets/ContactUs/blog-side-bg.png')",
+        "Appointment-bg": "url('/src/assets/Services/AppoinmentBg.png')",
+        "TC-bg": "url('/src/assets/tcBg.avif')",
+
+      }
+    },
+    fontFamily: {
+      'body': [
+        'Inter',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'system-ui',
+        'Segoe UI',
+        'Roboto',
+        'Helvetica Neue',
+        'Arial',
+        'Noto Sans',
+        'sans-serif',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'Noto Color Emoji'
+      ],
+      'sans': [
+        'Inter',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'system-ui',
+        'Segoe UI',
+        'Roboto',
+        'Helvetica Neue',
+        'Arial',
+        'Noto Sans',
+        'sans-serif',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'Noto Color Emoji'
+      ]
+    }
+  },
+  plugins: [],
+
+}
+
